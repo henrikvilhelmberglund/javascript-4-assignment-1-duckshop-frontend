@@ -18,6 +18,7 @@
 		</article>
 	</a>
 {:else}
+	<a class="mb-12 bg-slate-200 p-4 rounded-md" href="/">Go back to all products</a>
 	<main class="flex">
 		<article class="flex relative text-center flex-col h-min w-[512px] rounded-3xl bg-slate-200">
 			<img class="rounded-3xl rounded-b-none" src={image_link} alt={name} />
@@ -30,7 +31,7 @@
 			<p class="italic text-xl">
 				{description}
 			</p>
-      <!-- TODO implement cart -->
+			<!-- TODO implement cart -->
 			<button class="self-start p-4 bg-green-400 rounded-md mb-8">Add to cart</button>
 		</section>
 	</main>
