@@ -7,12 +7,12 @@
 </script>
 
 <section class="flex justify-center">
-	<h2 class="text-3xl">
+	<h2 class="text-3xl mt-6">
 		Welcome to DuckShop, your goto shop for duck related (and non duck related) products!
 	</h2>
 </section>
 
-<main class="flex flex-col items-center mt-24">
+<main class="flex flex-col items-center mt-12">
 	<div class="flex w-[80vw] flex-wrap gap-24">
 		{#each products as product}
 			<Product {product}/>
