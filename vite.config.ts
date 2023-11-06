@@ -13,7 +13,8 @@ export default defineConfig({
 		include: ['src/**/*.{test,spec}.{js,ts}'],
 		environment: 'jsdom',
 		globals: true,
-		setupFiles: 'src/setupTests.ts' 
+		setupFiles: 'src/setupTests.ts',
+		// shows the output of all tests even if they passed
+		reporters: 'verbose'
 	}
 });
-
