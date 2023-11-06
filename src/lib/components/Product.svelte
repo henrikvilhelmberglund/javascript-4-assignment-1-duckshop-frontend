@@ -12,27 +12,34 @@
 		<article class="relative flex h-min w-[300px] flex-col rounded-3xl bg-slate-200 text-center">
 			<img class="rounded-3xl rounded-b-none" src={image_link} alt={name} />
 			<h3 class="text-2xl">{name}</h3>
-			<div class="border-1 absolute bottom-8 right-0 rounded border-black bg-slate-200 p-4">
+			<div class="border-1 absolute bottom-8 right-0 rounded border-black bg-slate-200 p-2">
 				<p class="">{price} SEK</p>
 			</div>
 		</article>
 	</a>
 {:else}
-	<a class="mb-12 rounded-md bg-slate-200 p-4" href="/">Go back to all products</a>
 	<main class="flex">
 		<article class="relative flex h-min w-[512px] flex-col rounded-3xl bg-slate-200 text-center">
 			<img class="rounded-3xl rounded-b-none" src={image_link} alt={name} />
 			<h3 class="text-2xl">{name}</h3>
-			<div class="border-1 absolute bottom-8 right-0 rounded border-black bg-slate-200 p-4">
+			<div class="border-1 absolute bottom-8 right-0 rounded border-black bg-slate-200 p-2">
 				<p class="">{price} SEK</p>
 			</div>
 		</article>
-		<section class="flex w-96 flex-col justify-between pl-6">
+		<section class="flex w-[28vw] flex-col justify-between pl-6">
 			<p class="text-xl italic">
 				{description}
 			</p>
 			<!-- TODO implement cart -->
-			<button class="mb-8 self-start rounded-md bg-green-400 p-4">Add to cart</button>
+			<div class="mb-8 flex h-12 items-center gap-2 text-center">
+				<button class="rounded-md bg-green-400 px-4 py-2">Add to cart</button>
+				<a class="rounded-md bg-slate-200 px-4 py-2 hover:bg-slate-300" href="/cart">
+					View cart (TODO)
+				</a>
+				<a class="rounded-md bg-slate-200 px-4 py-2 hover:bg-slate-300" href="/">
+					Go back to all products
+				</a>
+			</div>
 		</section>
 	</main>
 {/if}
