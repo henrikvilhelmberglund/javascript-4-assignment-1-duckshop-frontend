@@ -7,4 +7,6 @@
 
 <slot />
 
+<footer class="mt-24" />
+
 <style></style>

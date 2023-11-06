@@ -19,5 +19,3 @@
 		{/each}
 	</div>
 </main>
-
-<footer class="mt-24" />

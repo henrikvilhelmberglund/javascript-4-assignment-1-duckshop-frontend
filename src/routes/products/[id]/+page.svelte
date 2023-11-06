@@ -9,5 +9,3 @@
 <main class="flex flex-col items-center mt-24">
 	<Product {product} detailPage={true} />
 </main>
-
-<footer class="mt-24" />
