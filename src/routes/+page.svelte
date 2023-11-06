@@ -7,15 +7,15 @@
 </script>
 
 <section class="flex justify-center">
-	<h2 class="text-3xl mt-6">
+	<h2 class="mt-6 text-3xl">
 		Welcome to DuckShop, your goto shop for duck related (and non duck related) products!
 	</h2>
 </section>
 
-<main class="flex flex-col items-center mt-12">
+<main class="mt-12 flex flex-col items-center">
 	<div class="flex w-[80vw] flex-wrap gap-24">
 		{#each products as product}
-			<Product {product}/>
+			<Product {product} />
 		{/each}
 	</div>
 </main>
