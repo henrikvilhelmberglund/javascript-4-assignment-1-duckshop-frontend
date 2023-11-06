@@ -1,6 +1,8 @@
-☐ Index-route som visar produkter med bild, namn och pris
+☐ add component that renders each card, use it in both routes
+
+✔ Index-route som visar produkter med bild, namn och pris @done(23-11-06 17:39)
+✔ Klientfetch till APIets /items och /item/:id-routes @done(23-11-06 17:39)
 ☐ Detalj-route som visar en produkt med bild, namn, pris, beskrivning och antal i lager
 ☐ Minst två funktioner har test
 ☐ Koden följer DRY och SRP
-☐ Klientfetch till APIets /items och /item/:id-routes
 ☐ Kundkorg med användarens items (sparat i sessionstorage?)
