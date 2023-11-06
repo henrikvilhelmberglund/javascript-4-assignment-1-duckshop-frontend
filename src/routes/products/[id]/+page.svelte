@@ -6,6 +6,6 @@
 	const product: IProduct = data.product;
 </script>
 
-<main class="mt-24 flex flex-col items-center">
+<main class="flex mt-8 flex-col items-center">
 	<Product {product} detailPage={true} />
 </main>
