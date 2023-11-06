@@ -6,10 +6,6 @@
 	const products: IProduct[] = data.products;
 </script>
 
-<header class="flex items-center py-4 justify-center bg-slate-800">
-	<h1 class="text-5xl pb-1 font-agbalumo text-white">DuckShop</h1>
-</header>
-
 <section class="flex justify-center">
 	<h2 class="text-3xl">
 		Welcome to DuckShop, your goto shop for duck related (and non duck related) products!
