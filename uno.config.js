@@ -64,7 +64,8 @@ export default defineConfig({
 					}
 				],
 				a: 'Playfair Display',
-				b: 'Lora'
+				b: 'Lora',
+				agbalumo: 'Agbalumo'
 			}
 		}),
 		presetIcons({
