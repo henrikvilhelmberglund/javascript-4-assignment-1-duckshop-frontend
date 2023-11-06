@@ -7,17 +7,17 @@ describe('Load function', () => {
 		// ...
 		// We must call `load` ourselves because Vitest does not do it for the moment, due to page.server not being able to be called outside of SvelteKit context (https://github.com/sveltejs/kit/issues/1485#issuecomment-920923252)
 		const data = await load();
-		const products = data.products;
+		const products: Product[] = data.products;
 		expect(products.length).toBeGreaterThanOrEqual(11);
 	});
 
 	describe('Product array', async () => {
 		const data = await load();
-		const products = data.products;
+		const products: Product[] = data.products;
 
 		it.each(products)(
 			`$name has id, name, price, image_link, amount_in_stock and description`,
-			async (product) => {
+			async (product: Product) => {
 				expect(product.id).toBeDefined();
 				expect(product.name).toBeDefined();
 				expect(product.price).toBeDefined();
