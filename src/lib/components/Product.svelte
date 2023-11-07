@@ -8,23 +8,32 @@
 
 {#if !detailPage}
 	<!-- if not detail page (/product/:id) wrap article with a link -->
-	<a href={`/products/${id}`}>
-		<article class="relative flex h-min w-[300px] flex-col rounded-3xl bg-slate-200 text-center">
-			<img class="rounded-3xl rounded-b-none" src={image_link} alt={name} />
-			<h3 class="text-2xl">{name}</h3>
-			<div class="border-1 absolute bottom-8 right-0 rounded border-black bg-slate-200 p-2">
-				<p class="">{price} SEK</p>
-			</div>
+	<a class="group" href={`/products/${id}`}>
+		<article
+			class="group-hover:scale-101 relative flex h-min w-[300px] flex-col rounded-3xl bg-slate-200 text-center shadow-blue-950/20 transition-all group-hover:bg-slate-100 group-hover:shadow-xl">
+			<header>
+				<img class="rounded-3xl rounded-b-none" src={image_link} alt={name} />
+			</header>
+			<footer class="p-4">
+				<h3 class="text-2xl">{name}</h3>
+				<div class="border-1 absolute bottom-16 right-0 rounded border-black bg-slate-200 p-2">
+					<p class="">{price} SEK</p>
+				</div>
+			</footer>
 		</article>
 	</a>
 {:else}
 	<main class="flex">
 		<article class="relative flex h-min w-[512px] flex-col rounded-3xl bg-slate-200 text-center">
-			<img class="rounded-3xl rounded-b-none" src={image_link} alt={name} />
-			<h3 class="text-2xl">{name}</h3>
-			<div class="border-1 absolute bottom-8 right-0 rounded border-black bg-slate-200 p-2">
-				<p class="">{price} SEK</p>
-			</div>
+			<header>
+				<img class="rounded-3xl rounded-b-none" src={image_link} alt={name} />
+			</header>
+			<footer class="p-4">
+				<h3 class="text-2xl">{name}</h3>
+				<div class="border-1 absolute bottom-16 right-0 rounded border-black bg-slate-200 p-2">
+					<p class="">{price} SEK</p>
+				</div>
+			</footer>
 		</article>
 		<section class="flex w-[28vw] flex-col justify-between pl-6">
 			<p class="text-xl italic">
