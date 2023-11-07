@@ -4,6 +4,19 @@
 	export let product: IProduct;
 	export let detailPage = false;
 	const { id, name, price, description, amount_in_stock, image_link } = product;
+
+	function addToCart(name: string) {
+		let existingItems = sessionStorage.getItem('cart');
+
+		if (existingItems) {
+			sessionStorage.setItem(
+				'cart',
+				`${existingItems},${JSON.stringify(name).replaceAll('"', '')}`
+			);
+		} else {
+			sessionStorage.setItem('cart', `${JSON.stringify(name).replaceAll('"', '')}`);
+		}
+	}
 </script>
 
 {#if !detailPage}
@@ -42,17 +55,22 @@
 				</p>
 			</header>
 			<hr class="my-4" />
-			<footer>
+			<footer class="flex flex-col gap-6">
 				<p class="text-lg">{amount_in_stock} left in stock.</p>
 				<!-- TODO implement cart -->
 				<div class="flex h-12 items-center gap-2 text-center">
-					<button class="transition-all rounded-md bg-green-400 hover:bg-green-300 shadow-green-400 hover:shadow-lg px-4 py-2">Add to cart</button>
+					<button
+						on:click={() => addToCart(name)}
+						class="rounded-md bg-green-400 px-4 py-2 shadow-green-400 transition-all hover:bg-green-300 hover:shadow-lg"
+						>Add to cart</button>
 					<a
-						class="transition-all rounded-md bg-slate-200 px-4 py-2 shadow-slate-300 hover:bg-slate-100 hover:shadow-xl"
+						class="rounded-md bg-slate-200 px-4 py-2 shadow-slate-300 transition-all hover:bg-slate-100 hover:shadow-xl"
 						href="/cart">
 						View cart (TODO)
 					</a>
-					<a class="transition-all rounded-md bg-slate-200 px-4 py-2 shadow-slate-300 hover:bg-slate-100 hover:shadow-xl" href="/">
+					<a
+						class="rounded-md bg-slate-200 px-4 py-2 shadow-slate-300 transition-all hover:bg-slate-100 hover:shadow-xl"
+						href="/">
 						Go back to all products
 					</a>
 				</div>
