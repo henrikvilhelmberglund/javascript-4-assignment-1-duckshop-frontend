@@ -29,6 +29,7 @@
 		"@sveltejs/kit": "^1.20.4",
 		"@testing-library/jest-dom": "^6.1.4",
 		"@testing-library/svelte": "^4.0.4",
+		"@types/dom-view-transitions": "^1.0.4",
 		"@types/jest": "^29.5.7",
 		"@unocss/svelte-scoped": "^0.57.1",
 		"@vitest/ui": "^0.34.6",
