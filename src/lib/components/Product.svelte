@@ -35,20 +35,28 @@
 				</div>
 			</footer>
 		</article>
-		<section class="flex w-[28vw] flex-col justify-between pl-6">
-			<p class="text-xl italic">
-				{description}
-			</p>
-			<!-- TODO implement cart -->
-			<div class="mb-8 flex h-12 items-center gap-2 text-center">
-				<button class="rounded-md bg-green-400 px-4 py-2">Add to cart</button>
-				<a class="rounded-md bg-slate-200 px-4 py-2 hover:bg-slate-300" href="/cart">
-					View cart (TODO)
-				</a>
-				<a class="rounded-md bg-slate-200 px-4 py-2 hover:bg-slate-300" href="/">
-					Go back to all products
-				</a>
-			</div>
+		<section class="flex w-[28vw] flex-col pl-6">
+			<header>
+				<p class="text-xl italic">
+					{description}
+				</p>
+			</header>
+			<hr class="my-4" />
+			<footer>
+				<p class="text-lg">{amount_in_stock} left in stock.</p>
+				<!-- TODO implement cart -->
+				<div class="flex h-12 items-center gap-2 text-center">
+					<button class="transition-all rounded-md bg-green-400 hover:bg-green-300 shadow-green-400 hover:shadow-lg px-4 py-2">Add to cart</button>
+					<a
+						class="transition-all rounded-md bg-slate-200 px-4 py-2 shadow-slate-300 hover:bg-slate-100 hover:shadow-xl"
+						href="/cart">
+						View cart (TODO)
+					</a>
+					<a class="transition-all rounded-md bg-slate-200 px-4 py-2 shadow-slate-300 hover:bg-slate-100 hover:shadow-xl" href="/">
+						Go back to all products
+					</a>
+				</div>
+			</footer>
 		</section>
 	</main>
 {/if}
