@@ -10,6 +10,6 @@ export async function load(): Promise<{ products: IProduct[] }> {
 	const data = await response.json();
 	const products: IProduct[] = data.mockData;
 	return {
-		products
+		products,
 	};
 }
