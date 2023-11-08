@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { invalidate } from '$app/navigation';
 	import type { IProduct } from '$lib/interfaces/product';
 
 	export let product: IProduct;
@@ -9,9 +10,9 @@
 		let existingItems = sessionStorage.getItem('cart');
 
 		if (existingItems) {
-			sessionStorage.setItem('cart', `${existingItems},${name}`);
+			sessionStorage.setItem('cart', `${existingItems}${name},`);
 		} else {
-			sessionStorage.setItem('cart', `${name}`);
+			sessionStorage.setItem('cart', `${name},`);
 		}
 	}
 </script>
@@ -57,7 +58,11 @@
 				<!-- TODO implement cart -->
 				<div class="flex h-12 items-center gap-2 text-center">
 					<button
-						on:click={() => addToCart(name)}
+						on:click={() => {
+							addToCart(name);
+              // invalidate means we invalidate /cart loader data after clicking the button so it reruns and we get the current data
+							invalidate('/cart');
+						}}
 						class="rounded-md bg-green-400 px-4 py-2 shadow-green-400 transition-all hover:bg-green-300 hover:shadow-lg">
 						Add to cart</button>
 					<a
