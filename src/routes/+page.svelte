@@ -2,6 +2,7 @@
 	import Product from '$lib/components/Product.svelte';
 	import type { IProduct } from '$lib/interfaces/product.js';
 
+  // this is the load function from +layout.ts
 	export let data;
 	const products: IProduct[] = data.products;
 </script>
