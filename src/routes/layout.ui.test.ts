@@ -1,14 +1,16 @@
 import { render } from '@testing-library/svelte';
-import Index from './+page.svelte';
-import { load } from './+page';
+import Layout from './+layout.svelte';
+import Page from './+page.svelte';
+import { load } from './+layout';
 
-describe('Index route (UI test)', async () => {
+describe('Layout route (UI test)', async () => {
 	const data = await load();
 
-	const { container } = render(Index, {
-		props: {
-			data
-		}
+  const { container } = render(Layout, {
+    // not using this but for reference - needs export let data;
+		// props: {
+		// 	data,
+		// },
 	});
 
 	it('has a h1 "DuckShop"', async () => {

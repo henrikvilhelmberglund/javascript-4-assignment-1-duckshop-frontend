@@ -1,5 +1,5 @@
 import { render } from '@testing-library/svelte';
-import { load } from './+page';
+import { load } from './+layout';
 import type { IProduct } from '$lib/interfaces/product';
 
 describe('Load function', () => {
