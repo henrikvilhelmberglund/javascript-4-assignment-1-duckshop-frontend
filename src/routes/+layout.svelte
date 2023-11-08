@@ -15,9 +15,14 @@
 
 <!-- TODO fix ugly horizontal scrollbar  -->
 <header class="relative top-0 h-20 w-screen items-center justify-center bg-slate-800 py-4">
-	<h1 class="font-agbalumo absolute left-[50%] -translate-x-[50%] pb-1 text-5xl text-white">
-		DuckShop
-	</h1>
+	<a href="/">
+		<h1 class="font-agbalumo absolute left-[50%] -translate-x-[50%] pb-1 text-5xl text-white">
+			DuckShop
+		</h1>
+	</a>
+	<div class="flex justify-end gap-12 pr-12 text-xl text-slate-700">
+		<a class="bg-slate-50 p-2 rounded" href="/cart">View Cart</a>
+	</div>
 </header>
 
 <slot />
