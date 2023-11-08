@@ -5,3 +5,5 @@
 ✔ Minst två funktioner har test @done(23-11-08 17:12)
 ✔ Kundkorg med användarens items (sparat i sessionstorage?) @done(23-11-08 17:12)
 ☐ Koden följer DRY och SRP
+☐ add modal that shows that you added an item to your cart
+☐ add badge next to View Cart that shows the amount of items you've got in there
