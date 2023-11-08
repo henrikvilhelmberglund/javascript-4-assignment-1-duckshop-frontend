@@ -9,12 +9,9 @@
 		let existingItems = sessionStorage.getItem('cart');
 
 		if (existingItems) {
-			sessionStorage.setItem(
-				'cart',
-				`${existingItems},${JSON.stringify(name).replaceAll('"', '')}`
-			);
+			sessionStorage.setItem('cart', `${existingItems},${name}`);
 		} else {
-			sessionStorage.setItem('cart', `${JSON.stringify(name).replaceAll('"', '')}`);
+			sessionStorage.setItem('cart', `${name}`);
 		}
 	}
 </script>
