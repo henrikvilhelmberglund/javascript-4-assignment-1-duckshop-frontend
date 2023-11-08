@@ -8,7 +8,7 @@
 </script>
 
 <section class="flex justify-center">
-	<h2 class="mt-6 text-3xl">
+	<h2 class="mt-6 p-1 text-lg md:text-3xl">
 		Welcome to DuckShop, your goto shop for duck related (and non duck related) products!
 	</h2>
 </section>

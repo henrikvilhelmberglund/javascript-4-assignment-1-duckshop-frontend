@@ -16,7 +16,7 @@
 <!-- TODO fix ugly horizontal scrollbar  -->
 <header class="relative top-0 h-20 w-screen items-center justify-center bg-slate-800 py-4">
 	<a href="/">
-		<h1 class="font-agbalumo absolute left-[50%] -translate-x-[50%] pb-1 text-5xl text-white">
+		<h1 class="font-agbalumo absolute md:left-[50%] md:-translate-x-[50%] pb-2 md:pb-1 pl-3 text-4xl md:text-5xl text-white">
 			DuckShop
 		</h1>
 	</a>
