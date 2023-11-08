@@ -1,17 +1,52 @@
 <script lang="ts">
+	import CartProduct from '$lib/components/CartProduct.svelte';
+
 	export let data;
 
-  // TODO render nice cart thingy for each item with button to add and remove from cart which increases/decreases amount by 1, if amount is 0 remove it completely
-  // TODO add tests for load function
+	$: cart = data.cart;
+
+	$: totalSum = data.totalSum;
+
+	// TODO add tests for load function
 </script>
 
-{#if data.cart}
-	{#each Object.entries(data.cart) as [product, amount]}
-		<li>
-			{product}: {amount}
-		</li>
-	{/each}
-{/if}
+<main class="flex flex-col items-center">
+	{#if Object.keys(cart).length && totalSum > 0}
+		<div class="flex w-[600px] justify-between px-4">
+			<p class="w-64">Name</p>
+			<p>Price</p>
+			<p>Amount</p>
+		</div>
+		<div class="rounded-xl rounded-b-none bg-slate-300">
+			{#each Object.entries(cart) as [productName, amount], i}
+				{@const currentProduct = data.products.find((product) => product.name === productName)}
+				{@const totalProducts = Object.keys(data.cart).length}
+				{#if currentProduct}
+					<CartProduct
+						on:addToSum={(e) => {
+							console.log('HELLOLLOO');
+							totalSum += e.detail.change;
+							// sum = getCurrentSum();
+						}}
+						on:subtractFromSum={(e) => {
+							console.log('HELLOLLOO');
+							totalSum -= e.detail.change;
+							// sum = getCurrentSum();
+						}}
+						{currentProduct}
+						{amount} />
+				{/if}
+			{/each}
+			<div class="flex justify-end p-4">
+				<p class="font-bold">
+					Total: {totalSum.toFixed(2)} SEK
+				</p>
+			</div>
+		</div>
+	{:else}
+		<h2 class="text-3xl">Your cart is empty.</h2>
+	{/if}
+</main>
 
 <style>
 </style>
