@@ -38,7 +38,7 @@
 	<article class="relative flex h-min w-[600px] items-center justify-between p-4 text-center">
 		<div class="flex w-64 flex-col">
 			<h3 class="text-left text-2xl">{name}</h3>
-			<a class="inline-block" href={`/products/${id}`}>
+			<a class="inline-block w-32" href={`/products/${id}`}>
 				<img class="h-32 w-32 object-cover" src={image_link} alt={name} />
 			</a>
 		</div>
