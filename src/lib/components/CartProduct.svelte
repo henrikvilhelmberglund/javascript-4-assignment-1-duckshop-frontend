@@ -46,9 +46,9 @@
 			<p class="">{price} SEK</p>
 		</div>
 		<div class="flex gap-2">
-			<button on:click={() => subtractAmount()} class="h-8 w-6 bg-slate-200">-</button>
+			<button on:click={() => subtractAmount()} class="h-8 w-6 bg-slate-200 rounded">-</button>
 			<p class="text-2xl">{amount}</p>
-			<button on:click={() => addAmount()} class="h-8 w-6 bg-slate-200">+</button>
+			<button on:click={() => addAmount()} class="h-8 w-6 bg-slate-200 rounded">+</button>
 		</div>
 	</article>
   <hr class="border-slate-700" />
