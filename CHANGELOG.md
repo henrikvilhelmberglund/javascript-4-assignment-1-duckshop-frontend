@@ -2,6 +2,51 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.1](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/compare/v0.0.0...v0.0.1) (2023-11-08)
+
+
+### Features
+
+* mobile styling ([3494baf](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/3494bafecd29857e1cb117975f2be0a8ee99a8ff))
+* add todo ([289b473](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/289b4739942d183c09181905639aca8f994ba98c))
+* use FETCH_URL ([dcd272c](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/dcd272cae20e7ce5183284ffafb0b1808d2687da))
+* add constants.ts with FETCH_URL ([38990f0](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/38990f088cb86d4a6ef4e313dbb0afc513df33dd))
+* update packages, was checking for a bug but it wasn't this! still nice with new stuff ([74d6ed0](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/74d6ed0a716af4b1507a73a3560c1ee5835b617d))
+* update todo ([a84a769](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/a84a7694950d869c5dff80dc40e2ab41c6d22114))
+* update todo ([c6f0be9](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/c6f0be9cbf18567c489f4193f6dbb24715c4f435))
+* styling ([22abd45](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/22abd45436010541e31d9c1d0306a245c3c0ccae))
+* render products in cart in /cart, show total sum ([072eb08](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/072eb08ce8096ab40ace1294175fee47278b924e))
+* add View Cart link in header ([33b4b44](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/33b4b4416944aab5dc2701d876b63c2deaf8b336))
+* add totalSum return value in cart load function ([85e3165](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/85e316549f5b5444fe26d7dc82ee842f7467bf8c))
+* make cart syntax consistent with , at end, add invalidate function for invalidating /cart load function ([9bce54b](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/9bce54b3c76d7d5a50a5cd2c3452be7ced525df9))
+* add CartProduct component for showing a product in a cart ([b4ba39b](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/b4ba39be63b1acf8df13672b7626bef89fb84bb3))
+* move products load function to layout so I can access it from every route ([190a8fb](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/190a8fb741bee506a9d35d52e4c2d92917799a02))
+* add cart route ([fdfe039](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/fdfe039063804bc92041a898aa613ed8b35f1b08))
+* add addToCart function ([da7d9d5](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/da7d9d5bf9df6cac0f6f924f24a3fbed5d39a1ed))
+* add count function for cart in load function ([828b5ed](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/828b5ed8ff2600afba2ca200a03ee60905ae491b))
+* add "left in stock", styling ([bb51165](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/bb51165c494385ecbca96cbc4ffb2bb525eac1e8))
+* use lang="ts" in layout ([fdf9232](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/fdf92321ecade2385dfb6c72fbbf2244925caf6b))
+* add @types/dom-view-transitions ([ae00bf6](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/ae00bf6aa616b5ca4afc1949f0950a7e4bdb12f3))
+* styling ([9e4fece](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/9e4fecefd723221a3040bc176f717e0be66195d8))
+* add todo ([69d119d](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/69d119d4407d67ac69bb1645338668e42a0bf229))
+* add links for cart/going back ([2da022e](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/2da022ee47b34956324298302246e38dbcb5cd54))
+
+
+### Bug Fixes
+
+* use !process.env.CI for reuseExistingServer because it is more standard ([77c629e](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/77c629eb02a91bdf9b074dc11c113740aa98095f))
+* don't build for playwright testing (a bit overkill) ([605af6a](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/605af6a4cbb7a976030c8dd837d1d4e056b572d0))
+* rename and update tests (moved load function to layout etc) ([eca8652](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/eca8652fb456c4d6f757a473466437dc97f4b915))
+* > 0 doesn't work consistently with floats so changing to > 1 ([a0c1ada](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/a0c1adad2a3f22c2ac664c45a48c70d50c25933f))
+* make link as wide as image ([04358ae](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/04358aea24c115a615a49707ce745a9cdd18d275))
+* fix interface (2) ([669e9d9](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/669e9d926b11740d71daa6850883fdbeb1246799))
+* fix interface name ([d031da3](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/d031da39f845e447806e0a4d9a4224ed4a7399f1))
+* remove unneeded stringify (not adding objects now) ([0bb0532](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/0bb0532412fbab334f357c708471ce8c28b34643))
+* rename hooks.server.js to hooks.server.ts to avoid warning in problems tab ([41d78ff](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/41d78ff5735d843f69f8e842011578133123d967))
+* add bracketSameLine in prettierrc ([43041d6](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/43041d6dd6ab31e6104a0324c6400690fbb0416a))
+* style: less padding ([0b5c978](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/0b5c978c0b4fdda0c91c922b08f9ed7b5868a5c6))
+* use relative and absolute to avoid logo shifting when scrollbar exists/doesn't exist ([0b4b6c6](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/0b4b6c6e9502296dfb1fae13dcdd6ca65868064d))
+
 ## 0.0.0 (2023-11-06)
 
 
