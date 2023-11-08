@@ -1,5 +1,6 @@
 /** @type {import('./$types').PageLoad} */
-export async function load() {
+export async function load({ parent }) {
+	const { products } = await parent();
 	const productsInCart = sessionStorage.getItem('cart');
 
 	function countProducts(): { [key: string]: number } {
@@ -12,13 +13,34 @@ export async function load() {
 
 			// Count the occurrences of each product
 			products.forEach((product) => {
-				productCount[product] = (productCount[product] || 0) + 1;
+				// skips last ,
+				if (product !== '') {
+					productCount[product] = (productCount[product] || 0) + 1;
+				}
 			});
 		}
 		return productCount;
 	}
 
-	let cart = countProducts();
+	async function calculateSum() {
+		let sum: number = 0;
+		Object.entries(cart).forEach((cartProduct) => {
+			// TODO fix?
+			let price = products.find((product) => product.name === cartProduct[0])?.price!;
+			let amount = cartProduct[1];
+			sum += price * amount;
+			console.log(sum);
+		});
+		// sessionStorage.setItem('sum', sum);
+		return sum;
+		// console.log(cart);
+		//  let total = Object.values(cart.map())
+	}
 
-	return { cart };
+	let cart = countProducts();
+	console.log(cart);
+	let totalSum = await calculateSum();
+	console.log(totalSum);
+
+	return { cart, totalSum };
 }
