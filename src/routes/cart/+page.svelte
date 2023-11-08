@@ -11,7 +11,7 @@
 </script>
 
 <main class="flex flex-col items-center">
-	{#if Object.keys(cart).length && totalSum > 0}
+	{#if Object.keys(cart).length && totalSum > 1}
 		<div class="flex w-[600px] justify-between px-4">
 			<p class="w-64">Name</p>
 			<p>Price</p>
