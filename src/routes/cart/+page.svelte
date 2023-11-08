@@ -18,20 +18,16 @@
 			<p>Amount</p>
 		</div>
 		<div class="rounded-xl rounded-b-none bg-slate-300">
-			{#each Object.entries(cart) as [productName, amount], i}
+			{#each Object.entries(cart) as [productName, amount]}
 				{@const currentProduct = data.products.find((product) => product.name === productName)}
 				{@const totalProducts = Object.keys(data.cart).length}
 				{#if currentProduct}
 					<CartProduct
 						on:addToSum={(e) => {
-							console.log('HELLOLLOO');
 							totalSum += e.detail.change;
-							// sum = getCurrentSum();
 						}}
 						on:subtractFromSum={(e) => {
-							console.log('HELLOLLOO');
 							totalSum -= e.detail.change;
-							// sum = getCurrentSum();
 						}}
 						{currentProduct}
 						{amount} />
