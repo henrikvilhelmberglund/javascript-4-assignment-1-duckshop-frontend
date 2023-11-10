@@ -3,8 +3,8 @@
 
 	export let data;
 
+	// Svelte reactive declaration
 	$: cart = data.cart;
-
 	$: totalSum = data.totalSum;
 
 	// TODO add tests for load function
@@ -20,7 +20,6 @@
 		<div class="rounded-xl bg-slate-100">
 			{#each Object.entries(cart) as [productName, amount]}
 				{@const currentProduct = data.products.find((product) => product.name === productName)}
-				{@const totalProducts = Object.keys(data.cart).length}
 				{#if currentProduct}
 					<CartProduct
 						on:addToSum={(e) => {
