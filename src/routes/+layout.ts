@@ -4,12 +4,14 @@ export const prerender = false;
 
 import { FETCH_URL } from '$lib/constants';
 import type { IProduct } from '$lib/interfaces/product';
+import { countProducts } from '$lib/utils';
 
 /** @type {import('./$types').PageLoad} */
 export async function load(): Promise<{ products: IProduct[] }> {
 	const response = await fetch(`http://${FETCH_URL}:3001/api/v1/products`);
 	const data = await response.json();
 	const products: IProduct[] = data.mockData;
+	countProducts();
 	return {
 		products,
 	};
