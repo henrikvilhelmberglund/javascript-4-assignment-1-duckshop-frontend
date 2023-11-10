@@ -7,7 +7,6 @@ import type { IProduct } from '$lib/interfaces/product';
 
 /** @type {import('./$types').PageLoad} */
 export async function load(): Promise<{ products: IProduct[] }> {
-	// TODO switch back to localhost
 	const response = await fetch(`http://${FETCH_URL}:3001/api/v1/products`);
 	const data = await response.json();
 	const products: IProduct[] = data.mockData;
