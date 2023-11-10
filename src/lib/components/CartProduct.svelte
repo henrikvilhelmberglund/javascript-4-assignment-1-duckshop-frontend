@@ -29,14 +29,30 @@
 				sessionStorage.setItem('cart', `${currentCart.replace(`${name},`, '')}`);
 			}
 			dispatch('subtractFromSum', { change: price });
+			amount -= 1;
 		}
-		amount -= 1;
+	}
+
+	function clearProduct() {
+		const currentCart = sessionStorage.getItem('cart');
+		if (currentCart) {
+			if (
+				currentCart.split(',').findIndex((product) => product === name) ===
+				currentCart.split(',').length - 1
+			) {
+				sessionStorage.setItem('cart', `${currentCart.replaceAll(`,${name}`, '')}`);
+			} else {
+				sessionStorage.setItem('cart', `${currentCart.replaceAll(`${name},`, '')}`);
+			}
+			dispatch('subtractFromSum', { change: price * amount });
+			amount = 0;
+		}
 	}
 </script>
 
 {#if amount !== 0}
-	<article class="relative flex h-min md:w-[600px] items-center justify-between p-4 text-center">
-		<div class="flex md:w-64 flex-col">
+	<article class="relative flex h-min items-center justify-between p-4 text-center md:w-[600px]">
+		<div class="flex flex-col md:w-64">
 			<h3 class="text-left text-2xl">{name}</h3>
 			<a class="inline-block w-32" href={`/products/${id}`}>
 				<img class="h-32 w-32 rounded-md object-cover" src={image_link} alt={name} />
@@ -45,13 +61,16 @@
 		<div class="border-1 rounded border-black bg-slate-200 p-2">
 			<p class="">{price} SEK</p>
 		</div>
-		<div class="flex md:flex-row pl-4 flex-col-reverse gap-2">
-			<button on:click={() => subtractAmount()} class="h-8 w-8 md:w-6 bg-slate-200 rounded">-</button>
+		<button on:click={() => clearProduct()} class="h-8 w-8 rounded bg-slate-200 md:w-12"
+			>Clear</button>
+		<div class="flex flex-col-reverse gap-2 pl-4 md:flex-row">
+			<button on:click={() => subtractAmount()} class="h-8 w-8 rounded bg-slate-200 md:w-6"
+				>-</button>
 			<p class="text-2xl">{amount}</p>
-			<button on:click={() => addAmount()} class="h-8 w-8 md:w-6 bg-slate-200 rounded">+</button>
+			<button on:click={() => addAmount()} class="h-8 w-8 rounded bg-slate-200 md:w-6">+</button>
 		</div>
 	</article>
-  <hr class="border-slate-700" />
+	<hr class="border-slate-700" />
 {/if}
 
 <style>
