@@ -2,7 +2,7 @@
 	import DisplayMessage from '$lib/components/DisplayMessage.svelte';
 	import { invalidate } from '$app/navigation';
 	import type { IProduct } from '$lib/interfaces/product';
-	import { message } from '$lib/store';
+	import { message } from '$lib/stores';
 
 	export let product: IProduct;
 	export let detailPage = false;

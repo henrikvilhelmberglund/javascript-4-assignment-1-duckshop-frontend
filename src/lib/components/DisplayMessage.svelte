@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { message } from '$lib/store';
+	import { message } from '$lib/stores';
 	import { onDestroy, onMount } from 'svelte';
 
 	let timeout: number;
