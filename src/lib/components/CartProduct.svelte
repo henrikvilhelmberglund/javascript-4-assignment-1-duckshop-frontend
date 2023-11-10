@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { goto, invalidate } from '$app/navigation';
 	import type { IProduct } from '$lib/interfaces/product';
+	import { totalProducts } from '$lib/stores';
 	import { createEventDispatcher } from 'svelte';
 
 	export let currentProduct: IProduct;
@@ -13,6 +14,7 @@
 		const currentCart = sessionStorage.getItem('cart');
 		sessionStorage.setItem('cart', `${currentCart}${name},`);
 		dispatch('addToSum', { change: price });
+		$totalProducts += 1;
 		amount += 1;
 	}
 
@@ -29,6 +31,7 @@
 				sessionStorage.setItem('cart', `${currentCart.replace(`${name},`, '')}`);
 			}
 			dispatch('subtractFromSum', { change: price });
+			$totalProducts -= 1;
 			amount -= 1;
 		}
 	}
@@ -45,6 +48,7 @@
 				sessionStorage.setItem('cart', `${currentCart.replaceAll(`${name},`, '')}`);
 			}
 			dispatch('subtractFromSum', { change: price * amount });
+			$totalProducts -= amount;
 			amount = 0;
 		}
 	}
