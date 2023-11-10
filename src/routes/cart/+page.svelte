@@ -12,12 +12,12 @@
 
 <main class="flex flex-col items-center">
 	{#if Object.keys(cart).length && totalSum > 1}
-		<div class="flex w-[80vw] md:w-[600px] justify-between px-4">
+		<div class="flex w-[80vw] justify-between px-4 md:w-[600px]">
 			<p class="w-24 md:w-64">Name</p>
 			<p>Price</p>
 			<p>Amount</p>
 		</div>
-		<div class="rounded-xl  bg-slate-100">
+		<div class="rounded-xl bg-slate-100">
 			{#each Object.entries(cart) as [productName, amount]}
 				{@const currentProduct = data.products.find((product) => product.name === productName)}
 				{@const totalProducts = Object.keys(data.cart).length}
