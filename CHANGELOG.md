@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.2](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/compare/v0.0.1...v0.0.2) (2023-11-10)
+
+
+### Features
+
+* initialize totalProducts when going to a route in case of refresh + we have sessionstorage data ([7f6efbd](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/7f6efbdd2365ff6e04518ad94b993ed4bff34c40))
+* use totalProducts to display a number next to the cart ([6e1ec3e](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/6e1ec3e6040a5b48e286c50638d9398bd61d0c68))
+* split product details markup into 2 new components ([8efdc32](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/8efdc32ce693831c3cc0c4b7543c5810303e5f8f))
+* set totalProducts when interacting with cart ([93e1a60](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/93e1a60a900622cdd82db2ad90d5d6eeac2aa543))
+* add utils.ts ([a14bd45](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/a14bd453d25482d1137b4e6552529dcaad928785))
+* add totalproducts store ([3175520](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/317552058739e9c1e0a50b70b84eeb897e4ff873))
+* increase prettier printwidth ([e624fb4](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/e624fb4a1225194a4b80c708be80bf890ab89f65))
+* update todo ([0815287](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/0815287491ea1a6e15ee346e48d76d8c5af81d4f))
+* rename store to stores ([1df950a](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/1df950a721f044549bb4288cb36ca665f9dbb413))
+* update todo ([ed24c7d](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/ed24c7d078b9ebafd032f4c3ad6509823daeaa32))
+* add height and width for other img tag ([1905bec](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/1905bec5aec705839faadcb05853f5a81adf1258))
+* add height and width for img tag ([92a2628](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/92a26287a16786457df6f82a9572e1988fb48641))
+* update todo ([4c761cf](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/4c761cf66e9cbda632c8dd9f5d0d74e092315de6))
+* display a message when a product is added to cart, styling ([75bc5e7](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/75bc5e777029c93fea4ef1321224f4f29bda1798))
+* add clearProduct() function that clears a product from the cart ([c4175cf](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/c4175cff29a686c882a6ab1c372f6675185ffc6b))
+* add DisplayMessage component for displaying a message (like a popup) ([36d5609](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/36d560993f8a67c5f658c4cc46d6493ad51bcfa7))
+* add store with message string ([ecd77a2](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/ecd77a26927561b0bfce14484ad667aa3ce217d0))
+* add todo ([05b4078](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/05b40788b81424be45e2a06acf47e2fbfde0d397))
+
+
+### Bug Fixes
+
+* move function to utils ([30a30b3](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/30a30b3dcb82cae0d2fdb624f0eb727b1e268cc0))
+* remove todo ([dd93b98](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/dd93b98e74237f7110ba6159a3329d05eff21c28))
+* use static env import to make vitest happy ([1aa76c1](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/1aa76c111f288dc484cf9895634820e8dfeb42ac))
+
 ## [0.0.1](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/compare/v0.0.0...v0.0.1) (2023-11-08)
 
 
