@@ -22,7 +22,7 @@ export function countProducts(): { [key: string]: number } {
 	return productCount;
 }
 
-export function countOccurrences(mainString: string, substring: string) {
+export function countOccurrences(mainString: string, substring: string): number {
 	let count = 0;
 	let index = mainString.indexOf(substring);
 
