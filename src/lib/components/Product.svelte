@@ -33,7 +33,12 @@
 		<article
 			class="group-hover:scale-101 relative flex h-min w-[300px] flex-col rounded-3xl bg-slate-100 text-center shadow-blue-950/20 transition-all group-hover:bg-slate-50 group-hover:shadow-xl">
 			<header>
-				<img height="512" width="512" class="rounded-3xl rounded-b-none" src={image_link} alt={name} />
+				<img
+					height="512"
+					width="512"
+					class="rounded-3xl rounded-b-none"
+					src={image_link}
+					alt={name} />
 			</header>
 			<footer class="p-4">
 				<h3 class="text-2xl">{name}</h3>
@@ -48,7 +53,12 @@
 		<article
 			class="relative flex h-min w-[70vw] flex-col rounded-3xl bg-slate-100 text-center md:w-[512px]">
 			<header>
-				<img class="rounded-3xl rounded-b-none" src={image_link} alt={name} />
+				<img
+					height="512"
+					width="512"
+					class="rounded-3xl rounded-b-none"
+					src={image_link}
+					alt={name} />
 			</header>
 			<footer class="p-4">
 				<h3 class="text-2xl">{name}</h3>
