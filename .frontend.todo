@@ -5,6 +5,6 @@
 ✔ Minst två funktioner har test @done(23-11-08 17:12)
 ✔ Kundkorg med användarens items (sparat i sessionstorage?) @done(23-11-08 17:12)
 ✔ add message that shows that you added an item to your cart @done(23-11-10 21:51)
+✔ add badge next to View Cart that shows the amount of items you've got in there @done(23-11-10 22:54)
 ☐ Koden följer DRY och SRP
-☐ add badge next to View Cart that shows the amount of items you've got in there
 ✘ add loading thingies for products @cancelled(23-11-10 21:58) (can't really do this with client side load https://svelte.dev/blog/streaming-snapshots-sveltekit#stream-non-essential-data-in-load-functions
