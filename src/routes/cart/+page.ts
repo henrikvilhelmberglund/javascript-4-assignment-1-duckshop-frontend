@@ -1,26 +1,8 @@
+import { countProducts } from '$lib/utils.js';
+
 /** @type {import('./$types').PageLoad} */
 export async function load({ parent }) {
 	const { products } = await parent();
-	const productsInCart = sessionStorage.getItem('cart');
-
-	function countProducts(): { [key: string]: number } {
-		// this fixes productCount[product] because TS knows it's a key of type string and a value of type number
-		let productCount: { [key: string]: number } = {};
-		if (productsInCart) {
-			const products = productsInCart.split(',');
-
-			// Reset the productCount object
-
-			// Count the occurrences of each product
-			products.forEach((product) => {
-				// skips last ,
-				if (product !== '') {
-					productCount[product] = (productCount[product] || 0) + 1;
-				}
-			});
-		}
-		return productCount;
-	}
 
 	async function calculateSum() {
 		let sum: number = 0;
