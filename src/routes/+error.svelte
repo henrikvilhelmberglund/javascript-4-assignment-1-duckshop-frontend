@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 </script>
 
-<!-- only works when server rendered for some reason -->
+<!-- server offline will give 500 on client -->
 
 <h1 class="text-4xl">{$page?.status} ({$page?.error?.message})</h1>
 {#if $page?.error?.extraInfo}
