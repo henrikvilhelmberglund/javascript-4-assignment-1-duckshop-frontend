@@ -1,9 +1,9 @@
 <script lang="ts">
 	import Product from '$lib/components/Product.svelte';
-	import type { IProduct } from '$lib/interfaces/product.js';
+	import type { IProduct } from '$lib/interfaces';
 
 	export let data;
-	const product: IProduct = data.product;
+	const product: IProduct = data.product!;
 </script>
 
 <svelte:head>
