@@ -53,7 +53,8 @@
 </script>
 
 <section class="flex flex-col pl-6 md:w-[28vw]">
-	<header>
+	<header class="flex flex-col items-center md:items-start gap-8">
+		<h3 class="text-3xl md:text-4xl">{name}</h3>
 		<p class="text-xl italic">
 			{description}
 		</p>
