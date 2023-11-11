@@ -1,14 +1,14 @@
 <script lang="ts">
 	import Product from '$lib/components/Product.svelte';
-	import type { IProduct } from '$lib/interfaces/product.js';
+	import type { IProduct } from '$lib/interfaces';
 
 	// this is the load function from +layout.ts
 	export let data;
-	const products: IProduct[] = data.products;
+	const products: IProduct[] = data.products!;
 </script>
 
 <svelte:head>
-  <title>DuckShop - The store for duck aficionados!</title>
+	<title>DuckShop - The store for duck aficionados!</title>
 </svelte:head>
 
 <section class="flex justify-center">

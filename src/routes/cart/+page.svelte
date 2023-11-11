@@ -9,6 +9,7 @@
 	$: cart = data.cart;
 	$: totalSum = data.totalSum;
 
+  const products = data.products!;
 	// TODO add tests for load function
 </script>
 
@@ -25,7 +26,7 @@
 		</div>
 		<div class="rounded-xl bg-slate-100">
 			{#each Object.entries(cart) as [productName, amount]}
-				{@const currentProduct = data.products.find((product) => product.name === productName)}
+				{@const currentProduct = products.find((product) => product.name === productName)}
 				{#if currentProduct}
 					<CartProduct
 						on:addToSum={(e) => {
