@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
 	import CartProduct from '$lib/components/CartProduct.svelte';
 
 	export let data;
@@ -38,6 +39,8 @@
 				</p>
 			</div>
 		</div>
+	{:else if !browser}
+		<h2 class="text-3xl">Loading your cart...</h2>
 	{:else}
 		<h2 class="text-3xl">Your cart is empty.</h2>
 	{/if}
