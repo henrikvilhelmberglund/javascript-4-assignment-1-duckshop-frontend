@@ -4,10 +4,10 @@ import Page from './+page.svelte';
 import { load } from './+layout';
 
 describe('Layout route (UI test)', async () => {
-	const data = await load();
+	const data = await load({ fetch });
 
-  const { container } = render(Layout, {
-    // not using this but for reference - needs export let data;
+	const { container } = render(Layout, {
+		// not using this but for reference - needs export let data;
 		// props: {
 		// 	data,
 		// },
