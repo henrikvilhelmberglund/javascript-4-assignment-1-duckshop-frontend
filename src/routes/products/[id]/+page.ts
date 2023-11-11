@@ -16,6 +16,7 @@ export async function load({ parent, params, fetch }): Promise<{ product: IProdu
 	if (!product) {
 		throw error(404, {
 			message: 'Not found',
+			extraInfo: 'The product you entered was not found.',
 		});
 	}
 	return {
