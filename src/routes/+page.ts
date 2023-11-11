@@ -2,7 +2,6 @@ import { browser } from '$app/environment';
 import type { MyError } from '$lib/interfaces.js';
 import { error } from '@sveltejs/kit';
 
-/** @type {import('./$types').PageLoad} */
 export async function load({ parent }) {
 	const parentData = await parent();
 	const myError = parentData.e;

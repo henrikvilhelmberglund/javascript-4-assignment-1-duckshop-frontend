@@ -8,7 +8,6 @@ import type { IProduct, IProductsResponse, MyError } from '$lib/interfaces';
 import { countProducts } from '$lib/utils';
 import { error, fail } from '@sveltejs/kit';
 
-/** @type {import('./$types').PageLoad} */
 export async function load({ fetch }): Promise<{ products: IProduct[] } | { e: MyError }> {
 	let products: IProduct[] = [];
 	let error = false;
