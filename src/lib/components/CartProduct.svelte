@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { goto, invalidate } from '$app/navigation';
 	import type { IProduct } from '$lib/interfaces/product';
 	import { totalProducts } from '$lib/stores';
 	import { createEventDispatcher } from 'svelte';
