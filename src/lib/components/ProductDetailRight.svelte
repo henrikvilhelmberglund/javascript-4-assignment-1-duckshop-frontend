@@ -73,7 +73,7 @@
 				class:!shadow-none={amountOfThisProduct >= amount_in_stock}
 				class="rounded-md bg-green-400 px-4 py-2 shadow-green-400 transition-all hover:bg-green-300 hover:shadow-lg">
 				Add to cart</button>
-			<a class="rounded-md bg-slate-200 px-4 py-2 shadow-slate-300 transition-all hover:bg-slate-100 hover:shadow-xl" href="/cart"> View cart (TODO) </a>
+			<a class="rounded-md bg-slate-200 px-4 py-2 shadow-slate-300 transition-all hover:bg-slate-100 hover:shadow-xl" href="/cart"> View cart </a>
 			<a class="rounded-md bg-slate-200 px-4 py-2 shadow-slate-300 transition-all hover:bg-slate-100 hover:shadow-xl" href="/"> Go back to all products </a>
 		</div>
 	</footer>
