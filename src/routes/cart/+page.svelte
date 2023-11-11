@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import CartProduct from '$lib/components/CartProduct.svelte';
+	import { totalProducts } from '$lib/stores.js';
 
 	export let data;
 
@@ -10,6 +11,10 @@
 
 	// TODO add tests for load function
 </script>
+
+<svelte:head>
+	<title>DuckShop - Cart ({$totalProducts} items)</title>
+</svelte:head>
 
 <main class="flex flex-col items-center">
 	{#if Object.keys(cart).length && totalSum > 1}
