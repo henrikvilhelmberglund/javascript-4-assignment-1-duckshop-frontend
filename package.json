@@ -26,6 +26,7 @@
 		"@julr/unocss-preset-heropatterns": "^1.0.2",
 		"@playwright/test": "^1.39.0",
 		"@sveltejs/adapter-auto": "^2.1.1",
+		"@sveltejs/adapter-static": "^2.0.3",
 		"@sveltejs/kit": "^1.27.3",
 		"@testing-library/jest-dom": "^6.1.4",
 		"@testing-library/svelte": "^4.0.5",
