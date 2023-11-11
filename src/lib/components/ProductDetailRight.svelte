@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
 	import { invalidate } from '$app/navigation';
 	import { message, totalProducts } from '$lib/stores';
 	import { countOccurrences } from '$lib/utils';
@@ -18,11 +19,13 @@
 	}
 
 	function getAmountInCart(): number {
-		let existingItems = sessionStorage.getItem('cart');
-		if (existingItems) {
-			const amountInCart = countOccurrences(existingItems, name);
-			console.log(amountInCart);
-			return amountInCart;
+		if (browser) {
+			let existingItems = sessionStorage.getItem('cart');
+			if (existingItems) {
+				const amountInCart = countOccurrences(existingItems, name);
+				console.log(amountInCart);
+				return amountInCart;
+			}
 		}
 		return 0;
 	}
