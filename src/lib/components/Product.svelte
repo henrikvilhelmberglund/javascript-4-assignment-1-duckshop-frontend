@@ -30,8 +30,8 @@
 	</a>
 {:else}
 	<main class="flex flex-col items-center md:flex-row">
-		<ProductDetailLeft {name} {image_link} {price} />
-		<ProductDetailRight {name} {description} {amount_in_stock} />
+		<ProductDetailLeft {name} {image_link} />
+		<ProductDetailRight {name} {description} {price} {amount_in_stock} />
 	</main>
 {/if}
 
