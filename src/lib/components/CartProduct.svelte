@@ -22,10 +22,7 @@
 		const currentCart = sessionStorage.getItem('cart');
 		if (currentCart) {
 			// TODO a bit stupid but I don't have a , after the last product
-			if (
-				currentCart.split(',').findIndex((product) => product === name) ===
-				currentCart.split(',').length - 1
-			) {
+			if (currentCart.split(',').findIndex((product) => product === name) === currentCart.split(',').length - 1) {
 				sessionStorage.setItem('cart', `${currentCart.replace(`,${name}`, '')}`);
 			} else {
 				sessionStorage.setItem('cart', `${currentCart.replace(`${name},`, '')}`);
@@ -39,10 +36,7 @@
 	function clearProduct() {
 		const currentCart = sessionStorage.getItem('cart');
 		if (currentCart) {
-			if (
-				currentCart.split(',').findIndex((product) => product === name) ===
-				currentCart.split(',').length - 1
-			) {
+			if (currentCart.split(',').findIndex((product) => product === name) === currentCart.split(',').length - 1) {
 				sessionStorage.setItem('cart', `${currentCart.replaceAll(`,${name}`, '')}`);
 			} else {
 				sessionStorage.setItem('cart', `${currentCart.replaceAll(`${name},`, '')}`);
@@ -65,13 +59,11 @@
 		<div class="border-1 rounded border-black bg-slate-200 p-2">
 			<p class="">{price} SEK</p>
 		</div>
-		<button on:click={() => clearProduct()} class="h-8 w-8 rounded bg-slate-200 md:w-12"
-			>Clear</button>
+		<button on:click={() => clearProduct()} class="h-8 w-8 rounded bg-slate-200 md:w-12">Clear</button>
 		<div class="flex flex-col-reverse gap-2 pl-4 md:flex-row">
-			<button on:click={() => subtractAmount()} class="h-8 w-8 rounded bg-slate-200 md:w-6"
-				>-</button>
-			<p class="text-2xl">{amount}</p>
 			<button on:click={() => addAmount()} class="h-8 w-8 rounded bg-slate-200 md:w-6">+</button>
+			<p class="text-2xl">{amount}</p>
+			<button on:click={() => subtractAmount()} class="h-8 w-8 rounded bg-slate-200 md:w-6">-</button>
 		</div>
 	</article>
 	<hr class="border-slate-700" />
