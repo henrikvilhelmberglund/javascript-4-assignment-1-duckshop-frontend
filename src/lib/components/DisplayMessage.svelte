@@ -17,7 +17,7 @@
 </script>
 
 <div
-	class="animate-delay-0.5s keyframes-fade-out absolute -left-20 bottom-20 animate-[fade-out_0.6s_ease-out_1] rounded bg-green-400 p-4">
+	class="animate-delay-0.5s keyframes-fade-out absolute -left-4 md:-left-20 bottom-20 animate-[fade-out_0.6s_ease-out_1] rounded bg-green-400 p-4">
 	<p class="text-xl">
 		{$message}
 	</p>
