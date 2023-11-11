@@ -69,7 +69,7 @@
 			<button
 				on:click={handleAddCart}
 				class:bg-red-400={amountOfThisProduct >= amount_in_stock}
-				class:hover:bg-red-300={amountOfThisProduct >= amount_in_stock}
+				class:hover-!bg-red-300={amountOfThisProduct >= amount_in_stock}
 				class:!shadow-none={amountOfThisProduct >= amount_in_stock}
 				class="rounded-md bg-green-400 px-4 py-2 shadow-green-400 transition-all hover:bg-green-300 hover:shadow-lg">
 				Add to cart</button>
