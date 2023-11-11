@@ -9,6 +9,9 @@
 
 <svelte:head>
 	<title>DuckShop - The store for duck aficionados!</title>
+	<meta
+		name="description"
+		content="This is Duckshop - The store for duck aficionados! Here you can shop for many lovely items including Duck Painting and Creepy Dog Statue. Right now we have a Christmas and New Years theme!" />
 </svelte:head>
 
 <section class="flex justify-center">
