@@ -8,6 +8,7 @@
 	export let description: string;
 	export let amount_in_stock: number;
 	export let name: string;
+	export let price: number;
 
 	function handleAddCart() {
 		if (amountOfThisProduct < amount_in_stock) {
@@ -53,8 +54,11 @@
 </script>
 
 <section class="flex flex-col pl-6 md:w-[28vw]">
-	<header class="flex flex-col items-center md:items-start gap-8">
+	<header class="flex flex-col items-center gap-2 md:gap-8 md:items-start">
 		<h3 class="text-3xl md:text-4xl">{name}</h3>
+		<footer class="border-1 rounded border-black bg-slate-100 p-1 md:p-2">
+			<p class="">{price} SEK</p>
+		</footer>
 		<p class="text-xl italic">
 			{description}
 		</p>
