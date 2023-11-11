@@ -8,9 +8,7 @@
 </script>
 
 <section class="flex justify-center">
-	<h2 class="mt-6 p-1 text-lg md:text-3xl">
-		Welcome to DuckShop, your goto shop for duck related (and non duck related) products!
-	</h2>
+	<h2 class="mt-6 p-1 text-lg md:text-3xl">Welcome to DuckShop, your goto shop for duck related (and non duck related) products!</h2>
 </section>
 
 <main class="mt-12 flex flex-col items-center">
