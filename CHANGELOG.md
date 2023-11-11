@@ -2,6 +2,62 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.3](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/compare/v0.0.2...v0.0.3) (2023-11-11)
+
+
+### Features
+
+* update todo ([14f3f06](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/14f3f0609039e9cdb36c3273bde2aa868da395c1))
+* add todo unrelated to project ([6be3c60](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/6be3c6063610da6267a93fa19e4f7e3eb4c60324))
+* error: add extraInfo message for when product is not found ([d2a8b1c](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/d2a8b1c14a9b250caa2c79793dada62a0b994045))
+* add 404 error for missing product WIP ([60ae139](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/60ae1395aa3957adce49027ae0c724a09573cd70))
+* update interface, use ! ([007337d](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/007337db41897c9e8295a368f5ba54e335b40458))
+* update import, use ! ([5004a76](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/5004a76cf1168d37837a1888dd0c18af98961038))
+* set products to data.products! ([e6c975a](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/e6c975af2c7350a2dd9c51aa7c13d77ae8529c3f))
+* update interface import ([42bf2df](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/42bf2df5bf7591a98649c138b03822f4f0c94a0d))
+* add error handling in +page.ts, not sure why I can't have this in +layout.ts ([b81d642](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/b81d642a03e55cc0fcd40b692559443d4578b212))
+* update interface import ([4e1bd75](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/4e1bd75e5a61ad75c86827f6278d04a334cf742b))
+* add error handling ([dd4e5b2](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/dd4e5b2f575765d5e89995ec2e32103bcaa13705))
+* update +error.svelte for rendering errors ([ccb8590](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/ccb85906615f51ca6dcfc18f675aafd75582e54c))
+* update +error.svelte for rendering errors ([6524868](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/65248688d8d26ca74c71d9adeb711bf0ed1a989e))
+* update interface imports ([4705ff4](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/4705ff48b0317d914eb6dfda39ba21d8423191d1))
+* move interfaces to interfaces.ts ([3f01896](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/3f01896a5dbfbcff5a5c5ab1a477cb065c1104c9))
+* add extraInfo in the sveltekit Error interface ([4340d0a](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/4340d0ab8a559520351e3b074cdb5e4b854dd94c))
+* add 404.html as fallback (for publishing to github pages) ([64f1482](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/64f14823b59a3e37fca4254c55a0852e22c3d96e))
+* use parent data instead of different API route to make site work offline ([aae3e21](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/aae3e21684c29ba33abe8a902dc598bb0afc1aab))
+* test without ssr with server offline - doesn't really work ([78457c1](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/78457c1a15fd99ddfbcf70ab215aa1de9b421204))
+* add fallback (wip) ([216e148](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/216e148ac8a613153fbf05377d7feaae0f60ca2f))
+* add +error.svelte WIP ([77f6bb6](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/77f6bb63d9c365b7c4cc86eb324a54992abdf0ce))
+* update todo ([f6c262d](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/f6c262db0653759ae03def6a9d085af2a95b429a))
+* footer styling ([d39392e](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/d39392e1381d1c94f820acc510a159401627d9c4))
+* seo - add titles ([563ad50](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/563ad50a4c8363f326c194f9cb98247082728506))
+* styling ([83e6982](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/83e6982ac85d6c8d3fdada5c4b7c74b92e35d3b2))
+* styling ([a6699eb](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/a6699eb48fb51691255a8af009566c8302b9aa72))
+* use static adapter ([eafd39c](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/eafd39cd7248f6394f19c60abe862f0e5864ae0f))
+* add static adapter for building SSG page ([06e2068](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/06e2068ac202d65da6dc2327b947cbd8cb2b0a53))
+* add browser check for sessionStorage ([ef31dfe](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/ef31dfe24a899a95593bafb050f6ac7adb1e8ec0))
+* add sveltekit fetch in sveltekit load function ([bd51505](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/bd51505a5c5b656fb93358bcc311852387504999))
+* add if browser in cart route to not crash in SSR ([55230cc](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/55230ccf106ced1b4aaac572ccd84eb360af4a8f))
+* display loading cart message when loading page since can't read cart in SSR ([c9e8557](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/c9e8557615400bcccdb91c7e0bb9c3ce8bf8955b))
+* enable SSR and prerendering ([94d9cd2](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/94d9cd2b7cef184e06ee1abc44e5dfe2b8705b48))
+* add browser check to countProducts ([6cd237d](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/6cd237dfb4d2c7629feacacc2651fe41a72a7a93))
+* add todo ([b883b75](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/b883b75861800ac91e5ee521b7c9f5c6b0082e7d))
+
+
+### Bug Fixes
+
+* remove unneeded import, add some info on why I don't use the backend id route ([5150ddd](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/5150ddd6d166df0eb75951db7469dfbe36844be4))
+* cleanup ([3fda2d8](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/3fda2d8c02e526a6f12edc632613698fcb16d4d1))
+* styling ([14771c9](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/14771c9a2fb9fd57c63125a70f5cc7e8b6c3b5a5))
+* styling ([134496d](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/134496d500b6323b285e03ab88647ccbff2622b3))
+* styling ([0b5da3e](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/0b5da3ebd27591840a085d094f3252f5b2cb1b6b))
+* send price as prop in ProductDetailRight instead ([36fe1ec](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/36fe1ecff0837bf8d3ba85f2da018e244dfb59d6))
+* remove todo, ugly scrollbar is better than logo jumping around ([36292a4](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/36292a4efce63eae4b86b06ce99c60c347f559c8))
+* remove unused import ([6e69162](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/6e69162daaaaefa78ccc29f0413c4844c5be4031))
+* remove Todo from p tag text ([91b96e2](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/91b96e2a99db65e09fe3b7291fc562ba4445cc9b))
+* fix hover red color on build by avoiding : after class directive ([50dead6](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/50dead649955881c945c77869b93a76475351fc1))
+* explicit return type ([a8e5cbb](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/a8e5cbb2cce2477f98239974124e99cb6a15d241))
+
 ## [0.0.2](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/compare/v0.0.1...v0.0.2) (2023-11-10)
 
 
