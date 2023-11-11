@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { IProduct } from '$lib/interfaces/product';
+	import type { IProduct } from '$lib/interfaces';
 	import { totalProducts } from '$lib/stores';
 	import { createEventDispatcher } from 'svelte';
 

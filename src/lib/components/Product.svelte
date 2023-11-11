@@ -1,9 +1,5 @@
 <script lang="ts">
-	import DisplayMessage from '$lib/components/DisplayMessage.svelte';
-	import { invalidate } from '$app/navigation';
-	import type { IProduct } from '$lib/interfaces/product';
-	import { message, totalProducts } from '$lib/stores';
-	import { countOccurrences } from '$lib/utils';
+	import type { IProduct } from '$lib/interfaces';
 	import ProductDetailLeft from './ProductDetailLeft.svelte';
 	import ProductDetailRight from './ProductDetailRight.svelte';
 
