@@ -34,6 +34,6 @@
 
 <slot />
 
-<footer class="mt-14" />
+<footer class="dark:bg-black h-40 w-full mt-14" />
 
 <style></style>
