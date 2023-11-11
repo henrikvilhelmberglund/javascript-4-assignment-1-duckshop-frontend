@@ -14,7 +14,6 @@
 	});
 </script>
 
-<!-- TODO fix ugly horizontal scrollbar  -->
 <header class="relative top-0 h-20 w-screen items-center justify-center bg-slate-800 py-4">
 	<a href="/">
 		<h1
