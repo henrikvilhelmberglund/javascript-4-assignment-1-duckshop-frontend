@@ -1,28 +1,25 @@
 // it is possible to disable SSR and prerendering to make sure fetches are done only in the browser
-export const ssr = true;
+export const ssr = false;
 export const prerender = true;
 
 import { browser } from '$app/environment';
 import { FETCH_URL } from '$lib/constants';
-import type { IProduct, IProductsResponse, MyError } from '$lib/interfaces';
+import type { IProduct } from '$lib/interfaces/product';
 import { countProducts } from '$lib/utils';
-import { error, fail } from '@sveltejs/kit';
+
+interface productsResponse {
+	statusCode: number;
+	message: string;
+	mockData: IProduct[];
+}
 
 /** @type {import('./$types').PageLoad} */
-export async function load({ fetch }): Promise<{ products: IProduct[] } | { e: MyError }> {
-	let products: IProduct[] = [];
-	let error = false;
-	let myError: MyError = { cause: { code: 'No error' } };
-	try {
-		const response = await fetch(`http://${FETCH_URL}:3001/api/v1/products`);
-		const data: IProductsResponse = await response.json();
-		products = data.mockData;
-		countProducts();
-	} catch (e: any) {
-		return {
-			e,
-		};
-	}
+export async function load({ fetch }) {
+	const response = await fetch(`http://${FETCH_URL}:3001/api/v1/products`);
+
+	const data: productsResponse = await response.json();
+	const products: IProduct[] = data.mockData;
+	countProducts();
 	return {
 		products,
 	};

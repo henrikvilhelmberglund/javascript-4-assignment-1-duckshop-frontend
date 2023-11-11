@@ -1,6 +1,6 @@
 import { render } from '@testing-library/svelte';
 import { load } from './+layout';
-import type { IProduct } from '$lib/interfaces/interfaces';
+import type { IProduct } from '$lib/interfaces/product';
 
 describe('Load function', () => {
 	it('returns a product array that has a length of at least 11', async () => {

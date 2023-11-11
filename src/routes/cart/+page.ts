@@ -1,5 +1,5 @@
 import { browser } from '$app/environment';
-import type { IProduct } from '$lib/interfaces/interfaces.js';
+import type { IProduct } from '$lib/interfaces/product.js';
 import { countProducts } from '$lib/utils.js';
 
 /** @type {import('./$types').PageLoad} */
