@@ -55,7 +55,7 @@
 				<img class="h-32 w-32 rounded-md object-cover" src={image_link} alt={name} />
 			</a>
 		</div>
-		<div class="border-1 rounded border-black bg-slate-200 p-2">
+		<div class="border-1 rounded border-black bg-blue-200 p-2">
 			<p class="">{price} SEK</p>
 		</div>
 		<button on:click={() => clearProduct()} class="h-8 w-8 rounded bg-slate-200 md:w-12">Clear</button>
