@@ -1,5 +1,5 @@
 import { browser } from '$app/environment';
-import type { IProduct } from '$lib/interfaces/product.js';
+import type { IProduct } from '$lib/interfaces';
 import { countProducts } from '$lib/utils.js';
 
 /** @type {import('./$types').PageLoad} */
@@ -22,7 +22,7 @@ export async function load({ parent }) {
 	}
 
 	const parentData = await parent();
-	const products: IProduct[] = parentData.products;
+	const products: IProduct[] = parentData.products!;
 
 	let cart = countProducts();
 	console.log(cart);
