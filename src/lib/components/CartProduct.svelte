@@ -4,7 +4,7 @@
 	import { createEventDispatcher } from 'svelte';
 
 	export let currentProduct: IProduct;
-	const { id, name, price, description, amount_in_stock, image_link } = currentProduct;
+	const { id, name, price, amount_in_stock, image_link } = currentProduct;
 	export let amount: number;
 
 	const dispatch = createEventDispatcher();
