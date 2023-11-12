@@ -1,4 +1,3 @@
-// import type { LayoutLoadEvent } from './$types';
 import type { LayoutData } from './$types';
 import { load } from './+layout';
 import type { IProduct } from '$lib/interfaces';
