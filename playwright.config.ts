@@ -11,6 +11,14 @@ const config: PlaywrightTestConfig = {
 	},
 	testDir: 'tests',
 	testMatch: /(.+\.)?(test|spec)\.[jt]s/,
+	projects: [
+		{
+			name: 'desktop',
+			use: {
+				headless: false,
+			},
+		},
+	],
 };
 
 export default config;
