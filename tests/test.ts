@@ -1,4 +1,4 @@
-import { expect, test, type ElementHandle, type Page, type BrowserContext } from '@playwright/test';
+import { expect, test, type Page, type BrowserContext } from '@playwright/test';
 
 // just testing Playwright, run with npm run test:playwright
 
