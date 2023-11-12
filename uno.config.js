@@ -46,7 +46,7 @@ export default defineConfig({
 			provider: 'google', // default provider
 			fonts: {
 				// these will extend the default theme
-				sans: 'Roboto',
+				sans: ['Mooli', 'Roboto'],
 				mono: ['Fira Code', 'Fira Mono:400,700'],
 				// custom ones
 				lobster: 'Lobster',
