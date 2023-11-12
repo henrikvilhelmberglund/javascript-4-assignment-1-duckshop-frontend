@@ -7,7 +7,7 @@ export async function load({ parent }) {
 		let sum: number = 0;
 		if (browser) {
 			Object.entries(cart).forEach((cartProduct) => {
-				let price = products.find((product) => product.name === cartProduct[0])?.price;
+				let price = products.find((product) => product.name === cartProduct[0])?.price!;
 				let amount = cartProduct[1];
 				sum += price * amount;
 				console.log(sum);

@@ -6,7 +6,7 @@ export async function load({ parent, params, fetch }): Promise<{ product: IProdu
 	const parentData = await parent();
 
 	// can use ! because layout will error first
-	const products: IProduct[] = parentData.products;
+	const products: IProduct[] = parentData.products!;
 
   // I used this fetch to get one item from the API but found it was unnecessary
   // because I can just fetch all products one and then filter from that
