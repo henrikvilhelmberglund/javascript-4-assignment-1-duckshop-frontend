@@ -18,7 +18,7 @@ export function countProducts(): { [key: string]: number } | {} {
 			products.forEach((product) => {
 				// skips last ,
 				if (product !== '') {
-					productCount[product] = (productCount[product] || 0) + 1;
+					productCount[product.trim()] = (productCount[product.trim()] || 0) + 1;
 				}
 			});
 		}
