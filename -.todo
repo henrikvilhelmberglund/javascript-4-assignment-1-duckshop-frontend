@@ -1,12 +1,12 @@
 Krav:
-☐ Går att köra i alla webbläsare
-☐ Fungerar perfekt på små enheter samt större enheter
+✔ Går att köra i alla webbläsare @done(23-11-12 21:27)
+✔ Fungerar perfekt på små enheter samt större enheter @done(23-11-12 21:27)
 ✔ Listning av produkter med namn samt pris @done(23-11-08 17:10)
 ✔ Ska gå att via en vald produkt i listan komma 1ll en detaljerad sida med detaljerad beskrivning av produkten och antal i lager @done(23-11-08 17:10)
 
 G:
 ✔ En frontend del samt en backend del måste finnas. @done(23-11-08 17:10)
-☐ Koden ska följa principerna DRY och SRP(Single Responsible Principle)
+✔ Koden ska följa principerna DRY och SRP(Single Responsible Principle) @done(23-11-12 21:27)
 ✔ Backend ska vara utvecklad som en Node.js applika1on. @done(23-11-08 17:10)
 ✔ Frontend ska vara utvecklad som en JavaScript applikation. @done(23-11-08 17:10)
 ✔ Minst 5 produkter @done(23-11-08 17:10)
