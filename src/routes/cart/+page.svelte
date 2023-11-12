@@ -1,15 +1,20 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import CartProduct from '$lib/components/CartProduct.svelte';
+	import type { IProduct } from '$lib/interfaces.js';
 	import { totalProducts } from '$lib/stores.js';
 
 	export let data;
 
 	// Svelte reactive declaration
-	$: cart = data.cart;
-	$: totalSum = data.totalSum;
+	$: cart = data.cart as
+		| {}
+		| {
+				[key: string]: number;
+		  };
+	$: totalSum = data.totalSum as number;
 
-  const products = data.products!;
+	const products: IProduct[] = data.products!;
 	// TODO add tests for load function
 </script>
 
