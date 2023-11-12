@@ -32,4 +32,8 @@
 
 <footer class="mt-14 h-40 w-full dark:bg-black" />
 
-<style></style>
+<style>
+	:global(*) {
+		--at-apply: 'font-sans';
+	}
+</style>
