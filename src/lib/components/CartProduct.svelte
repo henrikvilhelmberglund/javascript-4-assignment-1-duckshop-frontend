@@ -71,7 +71,7 @@
 			<div class:peer-hover-block={amount >= amount_in_stock} class="bg-white border-red-500 border-1 absolute mt-10 hidden w-40 -translate-x-32 md:-translate-x-16 text-black text-red-500">
 				<p class="text-center">There are only {amount_in_stock} in stock.</p>
 			</div>
-			<p class="text-2xl">{amount}</p>
+			<p class="text-2xl font-mono">{amount}</p>
 			<button on:click={() => subtractAmount()} class="h-8 w-8 rounded bg-slate-200 md:w-6">-</button>
 		</div>
 	</article>
