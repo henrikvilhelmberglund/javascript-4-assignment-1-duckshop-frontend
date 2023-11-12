@@ -1,5 +1,9 @@
 # DuckShop
 
+Här är min frontend!
+
+Henrik Berglund FEND22 (https://github.com/henrikvilhelmberglund)
+
 ## Scripts i package.json
 
 Dev: `npm run dev`
@@ -48,3 +52,5 @@ I src/routes/+layout.ts kan man sätta `SSR` och `prerender` till `false` så ka
 /src/routes/layout.unit.test.ts - Unit-test för load function i +layout.ts för att kontrollera datat från express. Varning för väldigt konstig load(), behövde skicka in massor av saker för att TS inte skulle klaga...! Ser inte helt rimligt ut men testen fungerar så jag är glad!
 
 /tests/test.ts (kanske inte bäst namn) - End to end-test med Playwright, körs i dev så ha allt igång! Körs utan headless så man ser vad som händer (hjälpte mig)
+
+Jag har lite andra filar som skräpar runt för jag tänkte använda saker härifrån till ett template på Github så sparar det här så länge!
