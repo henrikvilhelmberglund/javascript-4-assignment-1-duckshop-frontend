@@ -1,8 +1,18 @@
 import { browser } from '$app/environment';
 import type { IProduct } from '$lib/interfaces';
 import { countProducts } from '$lib/utils.js';
+import type { PageLoad } from './$types';
 
-export async function load({ parent }) {
+export const load: PageLoad = async ({
+	parent,
+}): Promise<{
+	cart:
+		| {}
+		| {
+				[key: string]: number;
+		  };
+	totalSum: number;
+}> => {
 	function calculateSum() {
 		let sum: number = 0;
 		if (browser) {
@@ -25,4 +35,4 @@ export async function load({ parent }) {
 	console.log(totalSum);
 
 	return { cart, totalSum };
-}
+};
