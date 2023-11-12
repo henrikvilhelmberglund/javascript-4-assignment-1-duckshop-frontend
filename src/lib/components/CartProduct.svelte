@@ -48,17 +48,17 @@
 </script>
 
 {#if amount !== 0}
-	<article class="relative flex h-min items-center justify-between p-4 text-center md:w-[600px]">
+	<article class="relative flex h-min gap-2 items-center justify-between p-2 md:p-4 text-center md:w-[600px]">
 		<div class="flex flex-col md:w-64">
-			<h3 class="text-left text-2xl">{name}</h3>
+			<h3 class="text-left text-xl absolute md:relative md:text-2xl">{name}</h3>
 			<a class="inline-block w-32" href={`/products/${id}`}>
-				<img class="h-32 w-32 rounded-md object-cover" src={image_link} alt={name} />
+				<img class="h-32 w-32 mt-8 md:mt-0 rounded-md object-cover" src={image_link} alt={name} />
 			</a>
 		</div>
-		<div class="border-1 rounded border-black bg-blue-200 p-2">
+		<div class="border-1 rounded border-black min-w-24  bg-blue-200 p-1 md:p-2">
 			<p class="">{price} SEK</p>
 		</div>
-		<button on:click={() => clearProduct()} class="h-8 w-8 rounded bg-slate-200 md:w-12">Clear</button>
+		<button on:click={() => clearProduct()} class="h-8 w-12 rounded bg-slate-200 md:w-12">Clear</button>
 		<div class="flex flex-col gap-2 pl-4 md:flex-row">
 			<button
 				on:click={() => {
@@ -68,7 +68,7 @@
 				}}
 				class:!bg-red-300={amount >= amount_in_stock}
 				class="peer h-8 w-8 rounded bg-slate-200 md:w-6">+</button>
-			<div class:peer-hover-block={amount >= amount_in_stock} class="bg-white border-red-500 border-1 absolute mt-10 hidden w-40 -translate-x-16 text-black text-red-500">
+			<div class:peer-hover-block={amount >= amount_in_stock} class="bg-white border-red-500 border-1 absolute mt-10 hidden w-40 -translate-x-32 md:-translate-x-16 text-black text-red-500">
 				<p class="text-center">There are only {amount_in_stock} in stock.</p>
 			</div>
 			<p class="text-2xl">{amount}</p>

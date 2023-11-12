@@ -54,9 +54,10 @@
 </script>
 
 <section class="flex flex-col pl-6 md:w-[28vw]">
-	<header class="flex flex-col items-center gap-2 md:gap-8 md:items-start">
+	<header class="flex flex-col items-center gap-2 md:items-start md:gap-8">
 		<h3 class="text-3xl md:text-4xl">{name}</h3>
-		<footer class="border-1 rounded border-black bg-slate-100 p-1 md:p-2">
+    <!-- needed to add min-w-24 for the mobile version to not look strange, very weird -->
+		<footer class="border-1 rounded border-black bg-slate-100 min-w-24 p-1 text-center md:p-2">
 			<p class="">{price} SEK</p>
 		</footer>
 		<p class="text-xl italic">
