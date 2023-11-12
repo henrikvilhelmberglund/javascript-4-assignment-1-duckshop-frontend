@@ -2,16 +2,13 @@
 export const ssr = true;
 export const prerender = true;
 
-import { browser } from '$app/environment';
 import { FETCH_URL } from '$lib/constants';
 import type { IProduct, IProductsResponse, MyError } from '$lib/interfaces';
 import { countProducts } from '$lib/utils';
-import { error, fail } from '@sveltejs/kit';
+import type { LayoutLoad } from './$types';
 
-export async function load({ fetch }): Promise<{ products: IProduct[] } | { e: MyError }> {
+export const load: LayoutLoad = async ({ fetch }): Promise<{ products: IProduct[] } | { e: MyError }> => {
 	let products: IProduct[] = [];
-	let error = false;
-	let myError: MyError = { cause: { code: 'No error' } };
 	try {
 		const response = await fetch(`http://${FETCH_URL}:3001/api/v1/products`);
 		const data: IProductsResponse = await response.json();
@@ -25,4 +22,4 @@ export async function load({ fetch }): Promise<{ products: IProduct[] } | { e: M
 	return {
 		products,
 	};
-}
+};
