@@ -3,6 +3,10 @@ import { vi } from 'vitest';
 import { countOccurrences, countProducts } from './utils';
 
 describe('countProducts unit test', () => {
+	afterEach(() => {
+		sessionStorage.clear();
+	});
+
 	vi.mock('$app/environment', () => ({
 		browser: true,
 		dev: true,
