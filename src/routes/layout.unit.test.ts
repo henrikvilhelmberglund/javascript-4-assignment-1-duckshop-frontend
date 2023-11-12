@@ -40,7 +40,8 @@ describe('Load function', () => {
     const data = (await load({
       fetch,
       data: null,
-      url: new URL('http://localhost:3000'),
+      // URL etc används inte, bara för att göra TS glad!
+      url: new URL('http://localhost:1234'),
       setHeaders: function (headers: Record<string, string>): void {
         throw new Error('Function not implemented.');
       },
