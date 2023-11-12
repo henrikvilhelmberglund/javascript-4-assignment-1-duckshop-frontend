@@ -1,6 +1,6 @@
 {
 	"name": "javascript-4-assignment-1-duckshop-frontend",
-	"version": "0.0.3",
+	"version": "1.0.0",
 	"author": "Henrik Berglund",
 	"license": "MIT",
 	"description": "SvelteKit template with Typescript, Vitest and UnoCSS",

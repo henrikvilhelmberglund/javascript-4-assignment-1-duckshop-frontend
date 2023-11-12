@@ -2,6 +2,44 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.0.0](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/compare/v0.0.3...v1.0.0) (2023-11-12)
+
+
+### Features
+
+* add .env.example ([ff572c2](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/ff572c26b6cd17398ad1d9fb17de7783a02e5514))
+* add some TS ([10a2b97](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/10a2b97ceead93dcac1b7acc8df796afde6fe90f))
+* update todos ([41e2379](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/41e2379de467b1ab811024b962a37295434017b3))
+* add very scary function call which looks unnecessary but stops typescript from complaining ([13703fc](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/13703fc5aa6bf23570919217fc49657b76a65116))
+* styling mobile ([cd3f317](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/cd3f3174cc7c62c2617c9dce50d0e8913fb1b5b5))
+* add ! again ([4763c2c](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/4763c2ceb2b6f61a9799381e1ec6c4bc083f5993))
+* add global font-sans utility (pretty stupid but works) ([da50bca](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/da50bca32aa2e372ae8121fe42c355a3c0a8c4a6))
+* add Mooli font because why not ([4b56b52](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/4b56b52a48c00a32db38186e92611a7655a7a741))
+* SEO ([4568e41](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/4568e41362242f36ea0e3f8dacb073353c9cea30))
+* add disclaimer ([6fc1607](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/6fc1607d421ed02ba668290016898cc7e9ba5e64))
+
+
+### Bug Fixes
+
+* use number in .env since bools don't work (oops) ([d297562](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/d2975628ebe6d639a7b707addd1febd334c772ce))
+* cleanup ([8d04c35](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/8d04c350fe46ceee305459fc68c4d6a6d4371cd7))
+* remove unused darkmode/theme components ([25bbac1](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/25bbac1367efb3bc441aae19796b9d3d9447cd13))
+* cleanup ([64ad5a0](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/64ad5a08cdfbf6f82a0b0483f2bcc4301edc2343))
+* remove unused footer component ([d5dc105](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/d5dc105d51029f3a20469d09129d5f467f430594))
+* rename readme ([f2a224c](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/f2a224cd7c7d53680853ccb51a1df489baeba264))
+* styling ([131d7a6](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/131d7a6eac979c6be38b1f582b53554fc044fbb5))
+* use monospace font to avoid ugly shifting ([338f782](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/338f7826676d74db23d5f51f154202a4dcf990fb))
+* trim product keys to avoid ugly space ([a1e5c81](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/a1e5c814fdd40397c271e85ac8b574465dd04028))
+* move calculateSum() to utils.ts ([d2d9894](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/d2d9894c647590ca84c3bd493ab3332f9674d896))
+* cleanup ([4647226](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/4647226270db6301fc424942aa9b1fa32c47a694))
+* cleanup ([f53846e](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/f53846e5c869e108543374c807d6931e495a1481))
+* cleanup ([0f84ab3](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/0f84ab31e03dcd2ef174fdfaf4c133a2f388c001))
+* use arrow function syntax for typescript ([9d71ac9](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/9d71ac983a5ed0926dce322fb12b40a7a2931e3e))
+* use arrow function syntax for typescript ([7c054d6](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/7c054d6aecbf2bbd2da643caec83c8fef523649a))
+* fix typescript (was doing the wrong thing apparently) ([19b3825](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/19b382522b6b8914a43cb52b0079629a8ab6e346))
+* fix interface import ([49001e3](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/49001e38edf5bb41789a5a8cf0b518d5496fc8ec))
+* make comment less confusing ([cd643ce](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/commit/cd643ce0812a28f201ff233fa71c6c1ef408954d))
+
 ## [0.0.3](https://github.com/henrikvilhelmberglund/javascript-4-assignment-1-duckshop-frontend/compare/v0.0.2...v0.0.3) (2023-11-11)
 
 
