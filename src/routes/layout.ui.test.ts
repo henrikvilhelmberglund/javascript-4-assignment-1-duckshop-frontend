@@ -1,7 +1,5 @@
 import { render } from '@testing-library/svelte';
 import Layout from './+layout.svelte';
-import { load } from './+layout';
-import type { LayoutData } from './$types';
 
 describe('Layout route (UI test)', async () => {
 	const { container } = render(Layout, {

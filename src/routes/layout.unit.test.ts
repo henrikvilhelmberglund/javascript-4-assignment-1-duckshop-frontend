@@ -1,6 +1,5 @@
 // import type { LayoutLoadEvent } from './$types';
-import type { LayoutData, LayoutLoad, LayoutLoadEvent } from './$types';
-import { render } from '@testing-library/svelte';
+import type { LayoutData } from './$types';
 import { load } from './+layout';
 import type { IProduct } from '$lib/interfaces';
 
