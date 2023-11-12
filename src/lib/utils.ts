@@ -1,6 +1,7 @@
 import { get } from 'svelte/store';
 import { totalProducts } from './stores';
 import { browser } from '$app/environment';
+import type { IProduct } from './interfaces';
 
 export function countProducts(): { [key: string]: number } | {} {
 	if (browser) {
@@ -22,9 +23,23 @@ export function countProducts(): { [key: string]: number } | {} {
 			});
 		}
 		return productCount;
-  }
-  // no sessionStorage on server
-  return {}
+	}
+	// no sessionStorage on server
+	return {};
+}
+
+export function calculateSum(cart: { [key: string]: number }, products: IProduct[]) {
+	let sum: number = 0;
+	if (browser) {
+		Object.entries(cart).forEach((cartProduct) => {
+			let price = products.find((product) => product.name === cartProduct[0])?.price!;
+
+			let amount = cartProduct[1];
+			sum += price * amount;
+			console.log(sum);
+		});
+	}
+	return sum;
 }
 
 export function countOccurrences(mainString: string, substring: string): number {

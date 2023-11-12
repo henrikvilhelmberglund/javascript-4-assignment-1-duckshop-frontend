@@ -1,6 +1,6 @@
 import { browser } from '$app/environment';
 import type { IProduct } from '$lib/interfaces';
-import { countProducts } from '$lib/utils.js';
+import { calculateSum, countProducts } from '$lib/utils.js';
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = async ({
@@ -13,25 +13,12 @@ export const load: PageLoad = async ({
 		  };
 	totalSum: number;
 }> => {
-	function calculateSum() {
-		let sum: number = 0;
-		if (browser) {
-			Object.entries(cart).forEach((cartProduct) => {
-				let price = products.find((product) => product.name === cartProduct[0])?.price!;
-				let amount = cartProduct[1];
-				sum += price * amount;
-				console.log(sum);
-			});
-		}
-		return sum;
-	}
-
 	const parentData = await parent();
 	const products: IProduct[] = parentData.products!;
 
 	let cart = countProducts();
 	console.log(cart);
-	let totalSum = calculateSum();
+	let totalSum = calculateSum(cart, products);
 	console.log(totalSum);
 
 	return { cart, totalSum };
