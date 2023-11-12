@@ -56,8 +56,8 @@
 <section class="flex flex-col pl-6 md:w-[28vw]">
 	<header class="flex flex-col items-center gap-2 md:items-start md:gap-8">
 		<h3 class="text-3xl md:text-4xl">{name}</h3>
-    <!-- needed to add min-w-24 for the mobile version to not look strange, very weird -->
-		<footer class="border-1 rounded border-black bg-slate-100 min-w-24 p-1 text-center md:p-2">
+		<!-- needed to add min-w-24 for the mobile version to not look strange, very weird -->
+		<footer class="border-1 min-w-24 rounded bg-slate-100 p-1 text-center md:p-2">
 			<p class="">{price} SEK</p>
 		</footer>
 		<p class="text-xl italic">
@@ -77,10 +77,14 @@
 				class:bg-red-400={amountOfThisProduct >= amount_in_stock}
 				class:hover-!bg-red-300={amountOfThisProduct >= amount_in_stock}
 				class:!shadow-none={amountOfThisProduct >= amount_in_stock}
-				class="rounded-md bg-green-400 px-4 py-2 shadow-green-400 transition-all hover:bg-green-300 hover:shadow-lg">
+				class="border-1 rounded-md border-black bg-green-400 px-4 py-2 shadow-green-400 transition-all hover:bg-green-300 hover:shadow-lg">
 				Add to cart</button>
-			<a class="rounded-md bg-slate-200 px-4 py-2 shadow-slate-300 transition-all hover:bg-slate-100 hover:shadow-xl" href="/cart"> View cart </a>
-			<a class="rounded-md bg-slate-200 px-4 py-2 shadow-slate-300 transition-all hover:bg-slate-100 hover:shadow-xl" href="/"> Go back to all products </a>
+			<a class="border-1 rounded-md border-black bg-slate-200 px-4 py-2 shadow-slate-300 transition-all hover:bg-slate-100 hover:shadow-xl" href="/cart">
+				View cart
+			</a>
+			<a class="border-1 rounded-md border-black bg-slate-200 px-4 py-2 shadow-slate-300 transition-all hover:bg-slate-100 hover:shadow-xl" href="/">
+				Go back to all products
+			</a>
 		</div>
 	</footer>
 </section>
