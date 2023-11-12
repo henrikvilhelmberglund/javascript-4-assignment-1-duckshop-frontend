@@ -13,7 +13,7 @@
 	function handleAddCart() {
 		if (amountOfThisProduct < amount_in_stock) {
 			addToCart(name);
-			// invalidate means we invalidate /cart loader data after clicking the button so it reruns and we get the current data
+			// invalidate means we invalidate /cart load function data after clicking the button so it reruns and we get the current data when hovering over a link
 			invalidate('/cart');
 			amountOfThisProduct = getAmountInCart();
 		}
